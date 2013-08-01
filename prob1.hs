@@ -13,7 +13,10 @@ sum35 x | x < 3             = 0
         |otherwise          = (sum35 (x-1))
 
 
-
+---
+---  solves it three different ways.  the last one is the first one would normally write,
+---  but I want to a different list comprehension way as well as one that does it all
+---
 main :: IO ()
 main = do
     putStrLn $ show $ sum [isValid(x) | x <- [1..999]]
